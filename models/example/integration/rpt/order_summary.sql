@@ -1,4 +1,10 @@
-
+{{
+    config(
+        materialized="table",
+        alias="order_summary",
+        schema="RPT"
+    )  
+}}
 
 with final as (
     select c.r_name as region_name, 
